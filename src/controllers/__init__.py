@@ -1,3 +1,3 @@
 from .DataController import DataController
-from .ProjectContoller import ProjectController
+from .ProjectController import ProjectController
 from .ProcessController import ProcessController
