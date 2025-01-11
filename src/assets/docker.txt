@@ -1,0 +1,18 @@
+docker stop
+docker stop $(docker ps -aq)
+
+remove containers 
+
+docker rm $(docker ps -aq)
+
+remove images
+
+ docker rmi $(docker images -q)
+
+remove volumes
+
+docker volume rm $(docker volume rm $(docker volume ls -q)
+
+clean system 
+
+docker system prune --all
