@@ -13,7 +13,7 @@ base_router =APIRouter(
 async def we(app_setting :Settings = Depends(get_settings)):
     
     app_name = app_setting.APP_NAME
-    app_version = app_setting.OPENAI_API_KEY
+    app_version = app_setting.APP_VERSION
     
     
     return {
